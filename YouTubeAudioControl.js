@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Audio Control
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  Enables Mono or Surround Sound for YouTube audio
 // @author       MARSE
 // @match        *://*.youtube.com/*
@@ -25,7 +25,7 @@
     splitter = audioContext.createChannelSplitter(2);
     merger = audioContext.createChannelMerger(1);
     gainNode = audioContext.createGain();
-    gainNode.gain.value = 5; // Default to 1 (normal volume level)
+    gainNode.gain.value = 3; // Default to 1 (normal volume level)
 
     source.connect(splitter);
     splitter.connect(merger, 0, 0);
