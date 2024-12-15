@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         YouTube Audio Control
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  Enables Mono or Surround Sound for YouTube audio
 // @author       MARSE
 // @match        *://*.youtube.com/*
-// @grant        none
+// @updateURL    https://raw.githubusercontent.com/LittleYoungBlud/Tampermonkey-YouTube-audio-control/refs/heads/main/YouTubeAudioControl.js
 // ==/UserScript==
 
 (function() {
